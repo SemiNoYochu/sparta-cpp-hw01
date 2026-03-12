@@ -6,7 +6,7 @@ int status[4] = { 0, };
 
 int main()
 {
-	std::cout << "50 초과의 HP/MP를 입력해주세요." << std::endl;
+	std::cout << "Enter HP/MP over 50." << std::endl;
 	std::cin >> status[0] >> status[1];
 
 	bool bInput = true;
@@ -15,7 +15,7 @@ int main()
 	{
 		if (50 >= status[0] || 50 >= status[1])
 		{
-			std::cout << "50 초과의 HP/MP를 입력해주세요." << std::endl;
+			std::cout << "Enter HP/MP over 50." << std::endl;
 
 			std::cin >> status[0] >> status[1];
 		}
@@ -28,14 +28,14 @@ int main()
 
 	bInput = true;
 
-	std::cout << "0 초과의 ATK/DEF를 입력해주세요." << std::endl;
+	std::cout << "Enter ATK/DEF over 0." << std::endl;
 	std::cin >> status[2] >> status[3];
 
 	while (bInput)
 	{
 		if (0 >= status[2] || 0 >= status[3])
 		{
-			std::cout << "0 초과의 ATK/DEF를 입력해주세요." << std::endl;
+			std::cout << "Enter ATK/DEF over 0." << std::endl;
 
 			std::cin >> status[2] >> status[3];
 		}
@@ -53,7 +53,7 @@ int main()
 
 	while (menuNum)
 	{
-		std::cout << "1.HP UP / 2.MP UP / 3.공격력 UP / 4.방어력 UP / 5.현재 능력치 / 6.Level Up / 0.나가기" << std::endl;
+		std::cout << "1.HP UP / 2.MP UP / 3.ATK UP / 4.DEF UP / 5.Current Status / 6.Level Up / 0.Quick" << std::endl;
 		std::cin >> menuNum;
 
 		setPotion(menuNum, &hpPotion, &mpPotion);
@@ -74,7 +74,7 @@ void setPotion(int count, int* p_HPPotion, int* p_MPPotion)
 		}
 		else
 		{
-			std::cout << "MP 포션이 부족합니다." << std::endl;
+			std::cout << "Not enough MP potions." << std::endl;
 		}
 		break;
 	case 2:
@@ -85,7 +85,7 @@ void setPotion(int count, int* p_HPPotion, int* p_MPPotion)
 		}
 		else
 		{
-			std::cout << "MP 포션이 부족합니다." << std::endl;
+			std::cout << "Not enough HP potions." << std::endl;
 		}
 		break;
 	case 3:
