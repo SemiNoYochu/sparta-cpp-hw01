@@ -3,5 +3,5 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
-  <Project Path="sparta-cpp-hw01/sparta-cpp-hw01.vcxproj" />
+  <Project Path="sparta-cpp-hw01/sparta-cpp-hw01.vcxproj" Id="412aa50f-8a6b-40c6-a37f-f27738329120" />
 </Solution>
